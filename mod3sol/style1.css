@@ -1,0 +1,226 @@
+body{
+	max-width: 767px;
+	margin: 0;
+	padding: 0;
+	display: initial;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: darkblue;
+	font-size:16px;
+	color:white;
+	background-color:maroon;
+	font-family:'oxygen',sans-serif;
+}
+.navigation{
+	max-width: 767px;
+	position: relative;
+	display: list-item;
+	justify-content: center;
+	align-items: center;
+	background-color: darkcyan;
+	padding: 10px;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.Menu{
+	margin: 0;
+	padding: 0;
+	width: 0;
+	overflow: hidden;
+	display: flex;
+	transition: 0.5s;
+
+}
+.navigation input:checked ~ .Menu
+{
+	width: 400px;
+}
+.Menu li 
+{
+	list-style: none;
+	margin: 0 10px;
+}
+.Menu li a 
+{
+	text-decoration: none;
+	color:black;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: .5s;
+}
+.Menu li a:hover
+{
+  color: wheat;
+}
+.navigation input
+{
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+.navigation span 
+{
+	position: absolute;
+	left: 20px;
+	width: 15px;
+	height: 15px;
+	background-color: #666;
+	pointer-events: none;
+	transition:0.5s;
+}
+.navigation input: checked ~ span
+{
+	background: gray;
+} 
+#header-nav{
+	background-color: darkcyan;
+	border-radius: 0;
+	border: 0;
+}
+.navbar-brand{
+	padding-top: 25px;
+}
+.navbar-brand h1{
+	font-family: sans-serif;
+	color: darkgreen;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: .5;
+	line-height: .5;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+#nav-list{
+	margin-top: 10px;
+	text-align: center;
+}
+#nav-list a{
+	color: #951c49;
+	text-align: center;
+}
+#nav-list a:hover{
+	background: #E7E7E7; 
+}
+#nav-list a span{
+	font-size: 1.8em;
+}
+.navbar-header button .navbar-toggle, .navbar-header .icon-bar{
+	border: 1px solid maroon;
+}
+.navbar-header button .navbar-toggle{
+	clear: both;
+	margin-top: -30px;
+}
+.container.jumbotron{
+	box-shadow: 0 0 50px whitesmoke;
+	border: 2px solid brown;
+}
+
+#Chicken-tile:hover,#Beef-tile:hover,#Shusi-tile:hover{
+	box-shadow: 0 1px 1px 1px gray;
+}
+
+#Chicken-tile,#Beef-tile,#Shusi-tile{
+	background-position: center;
+}
+
+#Chicken-tile span,#Beef-tile span,#Shusi-tile span{
+	position: relative;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: left;
+	font-size: 1.2em;
+	text-transform: none;
+	background-color: mediumseagreen;
+	color: white;
+	opacity: .8;
+}
+
+@media(min-width: 1200px){
+	#Chicken-tile,#Beef-tile,#Shusi-tile{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	position: relative;
+	border: 2px solid dimgray;
+	overflow: hidden;
+}
+}
+@media(min-width: 992px)and(max-width: 1199px){
+	#Chicken-tile,#Beef-tile,#Shusi-tile{
+	height: 350px;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	position: relative;
+	border: 2px solid dimgray;
+	overflow: hidden;
+}
+.container.jumbotron{
+ height:558px;
+ box-shadow: 0 0 50px whitesmoke;
+ border: 2px solid brown;
+ }
+}
+@media(min-width: 768px)and(max-width: 991px){
+	#Chicken-tile,#Beef-tile,#Shusi-tile{
+	height: 350px;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	position: relative;
+	border: 2px solid dimgray;
+	overflow: hidden;
+}
+	.container.jumbotron{
+		height: 432px;
+		box-shadow: 0 0 50px whitesmoke;
+		border: 2px solid brown;
+	}
+}
+@media(max-width: 767px){
+	#Chicken-tile,#Beef-tile,#Shusi-tile{
+	height: 480px;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	position: relative;
+	border: 2px solid dimgray;
+	overflow: hidden;
+}
+	.navbar-brand{
+		padding-top: 10px;
+		height: 60px;
+	}
+	.navbar-brand h1{
+		padding-top: 10px; 
+		font-size: 4vw;
+	}
+	#collapsable-nav a {
+		font-size: 1.2em;
+	}
+	#collapsable-nav a span{
+		font-size: 1em;
+		margin-right: 5px;
+	}m
+	#xs-deliver{
+		margin-top: 5px;
+		font-size: .7em;
+		letter-spacing: .1e;
+		text-transform: uppercase;
+	}
+	.container.jumbotron{
+		margin-top: 30px;
+		padding: 0;
+		box-shadow: 0 0 50px whitesmoke;
+		border: 2px solid brown;
+	}
+}
